@@ -1,0 +1,113 @@
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  padding: 240px 0;
+  background-position: 0 0;
+}
+section.module.parallax h1 {
+  color: #1e1e1e;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px white;
+}
+
+body, html {
+    height: 100%;
+}
+
+section.module.parallax-1 {
+  background-image: url("../img/slide_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+section.module.parallax-2 {
+  background-image: url("../img/slide_2.jpg");
+  margin-top: -40px;
+  
+}
+section.module.parallax-3 {
+  background-image: url("../img/slide_3.jpg");
+ 
+}
+section.module.parallax-3 {
+  background-image: url("../img/slide_4.jpg");
+ 
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax {
+    padding: 300px 0;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
+
+.logo1
+{
+  margin-left: 15px;
+  height: 45px;
+}
+
+.body1
+{
+  position: absolute;
+top: 45px;
+}
+
+.body2
+{
+  margin-top: -40px;
+  background-image: url(../img/bg.png)
+
+  }
+
+  .aboutus
+  {
+margin-top: 20px;
+text-align: center;
+  }
+
+  .aboutus_img
+  {
+    border-radius: 60%;
+    margin:auto;
+    height: 100%;
+    width:15%;
+  }
+
