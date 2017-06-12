@@ -48,14 +48,14 @@ section.module.parallax-1 {
 }
 section.module.parallax-2 {
   background-image: url("../img/slide_2.jpg");
-  margin-top: -40px;
+  
   
 }
 section.module.parallax-3 {
   background-image: url("../img/slide_3.jpg");
  
 }
-section.module.parallax-3 {
+section.module.parallax-4 {
   background-image: url("../img/slide_4.jpg");
  
 }
@@ -82,7 +82,7 @@ section.module.parallax-3 {
 
 .logo1
 {
-  margin-left: 15px;
+  margin: 7px;
   height: 45px;
 }
 
