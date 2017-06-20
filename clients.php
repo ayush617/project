@@ -24,25 +24,9 @@
 </div>
 
 <div class="w3-container">
-<h2>Add to timeline</h2>
-<form method="post" action="timeline.php">
+<h2>Add clients</h2>
+<form method="post" action="clients.php">
 		<table>
-			<tr>
-			<td>Number:</td>
-			<td><input type="number" name="id"></td>
-			</tr>
-			<tr>
-			<td>Headding:</td>
-			<td><input type="text" name="head"></td>
-			</tr>
-			<tr>
-			<td>Subtitle:</td>
-			<td><input type="text" name="sub"></td>
-			</tr>
-			<tr>
-			<td>Info:</td>
-			<td><input type="textbox" name="info"></td>
-			</tr>
 			<tr>
 			<td>Image url:</td>
 			<td><input type="text" name="url"></td>
@@ -64,16 +48,14 @@
 
 if (isset($_POST["submit"])) 
 {
-	$id=$_POST["id"];
-	$head=$_POST["head"];
-	$sub=$_POST["sub"];
-	$info=$_POST["info"];
+	
 	$url=$_POST["url"];
 
-$path_to_file = 'timeline.html';
+$path_to_file = 'ourclients.html';
 $file_contents = file_get_contents($path_to_file);
-$file_contents = str_replace("<!--for-php-->",'<div class="demo-card demo-card--step">'.PHP_EOL.'<div class="head">'.PHP_EOL.'<div class="number-box">'.PHP_EOL.'<span>'.$id.'</span>'.PHP_EOL.'</div>'.PHP_EOL.'<h2>'.$head.'<span class="small">'.$sub.'</span> </h2>'.PHP_EOL.'			</div>'.PHP_EOL.'<div class="body">'.PHP_EOL.'<p>'.$info.'</p>'.PHP_EOL.'<img src="'.$url.'" alt="Graphic">'.PHP_EOL.'</div>'.PHP_EOL.'
-		</div>'.PHP_EOL.PHP_EOL."<!--for-php-->",$file_contents);
+$file_contents = str_replace("<!--for-php-->",'<div class="add2cart_slide centered">'.PHP_EOL.'<div class="add2cart_image">'.PHP_EOL.'<span class="text"><i class="ico-angle-right"></i><span>Show Details</span></span>'.PHP_EOL.'</a><a data-rel="magnific-popup" href="'.$url.'" class="add2cart_img">'.PHP_EOL.'<span class="add2cart_zoom"><i class="ico-plus3"></i></span>'.PHP_EOL.'<img src="'.$url.'" alt="Client">'.PHP_EOL.'</a></div></div>'.PHP_EOL.PHP_EOL.'<!--for-php-->',$file_contents);
+
+
 file_put_contents($path_to_file,$file_contents); 
 	
 }

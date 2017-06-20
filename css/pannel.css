@@ -1,0 +1,13 @@
+div{
+background-color: rgba(5,4,2,0.1);
+width:850px;
+height: 100%;
+margin-left:auto;
+margin-right:auto;
+padding: 15px; }
+
+body{
+	 background-image: url('../img/slide_1.jpg');
+	  background-repeat: no-repeat; 
+	  background-size: cover;
+}
